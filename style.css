@@ -1,0 +1,337 @@
+:root {
+    --cor-principal: #0000FF;
+    --cor-secundaria: rgb(0, 0, 0);
+    --cor-de-fundo: #000;
+    --cor-branca: rgb(255, 255, 255);
+    --cor-transicao: rgb(216, 0, 0);
+}
+@font-face {
+    font-family: Butler;
+    src: url("Butler_Regular.otf");
+
+}
+@font-face {
+    font-family: ButlerBlack;
+    src: url("Butler_Black.otf");
+}
+header {
+    background-size: 100%;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    font-weight: 700;
+    background-color: var(--cor-de-fundo);
+    font-size: 20px;
+    z-index: 99;
+}
+nav {
+    float: right;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-branca);
+    transition: all 1s;      
+    font-family: Butler;
+}
+nav ul li a:hover {
+    color: linear-gradient(to right,rgb(0, 80, 172), rgb(83, 20, 200));
+}
+.rf {
+    width: 100px;
+    margin: 5px 0px 0px 0px;
+}
+body {
+    background-image: url("img/Sem\ Título-2.jpg"); 
+    width: 100%;
+    background-repeat: no-repeat; 
+    z-index: 99;
+    
+    
+}
+.principal {
+    background-size: contain;
+    width: 100%;  
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;  
+}
+.container__caixa .container__imagem {
+    width: 500px;    
+    border-radius: 10px;
+    margin: 200px 0 0 40px   
+}
+.caracteristicas {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Butler;
+    text-align: center;
+    margin-top: 200px;   
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+    position: absolute;
+    display: inline-block;
+}
+    h1::after {
+        content: '|';
+        opacity: 1;
+        margin-left: 5px;
+        display: inline-block;
+        animation: blink .7s infinite;
+      }
+    
+      @keyframes blink {
+        0%, 100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+.caracteristicas:hover {
+    transform: scale(1.09);
+    background-color: rgba(0,0,0,0.9);
+}
+.caracteristicas p {
+    font-size: 24px;
+}
+.caracteristicas .center a {
+    color:rgb(255, 255, 255);
+    transition: all 1s;
+    text-decoration: none;
+}
+.caracteristicas .center a:hover{
+    color: rgb(32, 20, 200);
+}
+.caracteristicas .center-menor {
+    display: none;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}    
+.grid .coluna {
+    margin: 20px 10px 30px 20px;     
+}
+.grid .coluna {
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+    border: solid 0px ;    
+}
+.main {
+    width: 1200px;
+    /* alinhar o main ao centro */
+    margin: 50px auto;  
+    
+}
+.grid .imagem {
+    width: 110%;
+    margin-top: 20px;
+}
+.main .grid img  {
+    width: 100%;      
+}
+.main .grid .tam img {
+    padding: 25px 25px 0 25px;
+}
+.main h1 {
+    text-align: center;
+    margin: 100px 0 20px 0; 
+}
+.grid .coluna h2  {
+    text-align: center;
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2514c8;
+}
+.grid .coluna p {
+    text-align: justify;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;  
+}
+.grid .coluna:hover {
+    transform: scale(1.03);   
+}
+.btn {
+    padding: 5px 20px 5px 20px;
+    transition: all 1s;
+    background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(83, 20, 200));
+    font-size: 20px; 
+    text-decoration: none;    
+    border: 1px solid var(--cor-branca);  
+    font-family: Butler;
+}
+.btn:hover {
+    color: var(--cor-secundaria);
+    background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+}
+.logos a{
+    margin: 5px;
+}
+.center img {
+    width: 50px;
+}
+footer {
+    background-color: var(--cor-de-fundo);
+    text-align: center;
+    padding: 25px;
+    box-sizing: border-box;
+    color: var(--cor-branca);
+    width: 100%;
+    background-size: 100%;
+    
+}
+footer a {
+    background: linear-gradient(to right,rgb(0, 80, 172), rgb(83, 20, 200));
+    text-decoration: none;  
+    margin: 10px;
+    color: var(--cor-branca);
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    transition: all 0.5s;
+   
+}
+footer a:hover {
+    background: rgb(80, 19, 195);
+    color: var(--cor-de-fundo);
+}
+.mostrar {
+    display: block;
+}
+.menu  {
+    /* cor da fonte */
+    color: var(--cor-branca);
+    /* cor da borda */
+    border: 1px solid var(--cor-branca);
+    /* retirar sublinhado */
+    text-decoration: none;
+    /* flutuar a direita */
+    float: right;
+    /* margem externa */
+    margin: 25px;
+    /*margem interna*/
+    padding: 5px 10px 5px 10px;
+    /* esconder o botao */
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+.mostrar {
+    display: block;
+}
+@media (max-width: 420px) {
+    .menu {
+        /* mostrar o botao do menu */
+        display: block;
+    
+    }
+    .container {
+        height: 40vh;
+    }
+    body {
+        background-image: none;
+        width: 100%;
+
+    }
+    header nav {
+        display: none;
+    }
+    .rf {
+        width: 80px;
+        text-align: center;
+    }
+    nav {
+        width: 100%;
+        /* esconder o nav */
+        
+    }
+    header nav ul li {
+        /* deixar um encima do outro */
+        display: inline-block;
+        font-size: 15px;
+        margin: 5px 0px 0px 15px;
+        padding: 6px;
+   
+    }
+    .main {
+        width: 100%;
+        text-align: center;
+    
+    }
+    .grid {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    .grid .imagem {
+        display: none;
+    }
+    .grid .coluna {
+        margin: 0 10px 20px 10px;
+        
+    }
+    .grid .coluna img {
+        width: 300px;
+
+    }
+    .grid .coluna p {
+        width: 300px;
+        text-align: justify;
+    }
+    .grid .coluna h2 {
+        text-align: center;
+        width: 300px;
+    }
+    .grid p {
+        margin: 20px;
+    }
+    .container__imagem {
+        display: none;
+    }
+    .container_principal {
+        margin: 0;
+        padding: 0;  
+    }
+    .btn-cv {
+        display: none;
+    }
+    .caracteristicas {
+        margin-top: 102px;
+        text-align: center;   
+        font-family: Bluter;
+        width: 93%;
+    }
+    
+    .caracteristicas .center {
+        display: none;
+    }
+    .caracteristicas .center-menor {
+        display: block;
+        
+    }
+    .caracteristicas .center-menor a {
+        color:rgb(255, 255, 255);
+        transition: all 1s;
+        margin: 5px;
+        text-decoration: none;
+    }
+    .caracteristicas .student {
+        font-size: 17px;
+    }
+}
