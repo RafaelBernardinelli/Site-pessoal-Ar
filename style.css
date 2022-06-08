@@ -79,6 +79,13 @@ body {
     padding: 10px;
     position: absolute;
     display: inline-block;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.caracteristicas:hover {
+    transform: translateY(0px);
+    opacity: 1;
 }
     h1::after {
         content: '|';
@@ -316,6 +323,11 @@ footer a:hover {
         text-align: center;   
         font-family: Bluter;
         width: 93%;
+        transform: none;
+    }
+    .caracteristicas:hover {
+        transform: none;
+        opacity: none;
     }
     
     .caracteristicas .center {
