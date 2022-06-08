@@ -75,7 +75,7 @@ body {
     font-family: Butler;
     text-align: center;
     margin-top: 200px;   
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
     padding: 10px;
     position: absolute;
     display: inline-block;
@@ -103,10 +103,7 @@ body {
           opacity: 0;
         }
       }
-.caracteristicas:hover {
-    transform: scale(1.09);
-    background-color: rgba(0,0,0,0.9);
-}
+
 .caracteristicas p {
     font-size: 24px;
 }
